@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Furniture Enterprises - Architectural Minimalism</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;family=Montserrat:wght@500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#584324",
+                        "surface-container-highest": "#e4e4cc",
+                        "secondary": "#5f5e5e",
+                        "on-background": "#1b1d0e",
+                        "primary-fixed-dim": "#e4beb2",
+                        "inverse-surface": "#303221",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#e2dfde",
+                        "on-secondary-container": "#636262",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "surface-tint": "#75584d",
+                        "background": "#fbfbe2",
+                        "inverse-primary": "#e4beb2",
+                        "surface-container": "#efefd7",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-container": "#8a714e",
+                        "on-tertiary-fixed": "#281801",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "outline": "#827470",
+                        "on-primary-fixed-variant": "#5b4137",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#705937",
+                        "primary-container": "#8d6e63",
+                        "outline-variant": "#d4c3be",
+                        "surface-container-high": "#eaead1",
+                        "inverse-on-surface": "#f2f2d9",
+                        "tertiary-fixed": "#feddb3",
+                        "on-surface-variant": "#504441",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-container": "#fffdff",
+                        "primary": "#72564c",
+                        "surface-bright": "#fbfbe2",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e4cc",
+                        "on-primary-container": "#fffcff",
+                        "surface": "#fbfbe2",
+                        "on-surface": "#1b1d0e",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f5f5dc",
+                        "primary-fixed": "#ffdbce",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#2b160f",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-dim": "#dbdcc3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1440px",
+                        "base": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Montserrat"],
+                        "display-lg": ["Playfair Display"],
+                        "subhead-lg": ["Montserrat"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "subhead-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fbfbe2; /* surface */
+            color: #1b1d0e; /* on-background */
+        }
+        .glass-panel {
+            background: rgba(251, 251, 226, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="antialiased font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar Shared Component -->
+<nav class="bg-surface/70 backdrop-blur-xl docked full-width top-0 sticky border-b border-outline-variant/30 shadow-[0_8px_30px_rgb(141,110,99,0.05)] transition-all duration-500 ease-in-out z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<div class="font-display-lg text-headline-sm tracking-tight text-on-background">
+                Furniture Enterprises
+            </div>
+<!-- Navigation Links (Hidden on Mobile, flex on md+) -->
+<ul class="hidden md:flex items-center gap-8">
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Shop</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Collection</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Materials</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Showrooms</a>
+</li>
+</ul>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-4 text-primary">
+<!-- Search (on_right) -->
+<button aria-label="Search" class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button aria-label="Favorite" class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button aria-label="Shopping Bag" class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button aria-label="Person" class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[870px] min-h-[600px] flex items-end justify-center pb-24 overflow-hidden">
+<!-- Background Image -->
+<img alt="Modern Sofa" class="absolute inset-0 w-full h-full object-cover object-center z-0" data-alt="A high-end architectural minimalist living room showcasing a premium, warm brown leather modern sofa as the centerpiece. The room features expansive whitespace with light cream walls and subtle, top-down natural lighting simulating a curated gallery space. The overall aesthetic is serene, sophisticated, and luxurious, relying on a palette of warm browns, deep matte blacks, and pristine light cream to highlight the craftsmanship of the furniture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjCUxTKQhKQ9jukSriGqqAWSbymovDaChBUDa1cBJ2tcVvt_gnWh0XfuLsGLDTnx5g4Hg5vDW1gEZm0WsMZBSacplhHzOnOHLVVLixOqut6MnOECKUWyOzlzqv4a1qmzhxRueVXptTvkV9ye37S1sVh1ikL6CfONciFevH708R9ULwIvRycZlT0K45wKPCpgwGmvgToxRL7Ni8yksXDMsP5aQ-YqYVMLVpHIFeh6SjH12n5oE1BKXlMcDT38MsDDf2Kt_Mrsin1L4"/>
+<!-- Gradient Overlay for Text Readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 via-surface/20 to-transparent z-10 mix-blend-multiply"></div>
+<!-- Content -->
+<div class="relative z-20 text-center max-w-4xl px-margin-mobile glass-panel py-12 px-8 rounded-xl shadow-[0_8px_30px_rgb(141,110,99,0.1)] border border-outline-variant/20">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-6">
+                    Modern Furniture for Elegant Living
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                    Discover our curated collection of artisanal pieces, designed with an architectural minimalist philosophy to transform your space into a sanctuary of quiet luxury.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="bg-on-background text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-primary transition-colors duration-300 w-full sm:w-auto">
+                        Explore Collection
+                    </button>
+<button class="border border-on-background text-on-background font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-container-high transition-colors duration-300 w-full sm:w-auto">
+                        View Lookbook
+                    </button>
+</div>
+</div>
+</section>
+<!-- Shop by Category (Bento Grid) -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-2">Curated Spaces</h2>
+<p class="font-body-md text-body-md text-secondary">Explore pieces tailored for every room in your home.</p>
+</div>
+<button class="hidden md:flex items-center gap-2 font-label-md text-label-md text-primary hover:text-on-background transition-colors">
+                    All Categories <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter h-auto md:h-[600px]">
+<!-- Living Room (Large Feature) -->
+<a class="group relative md:col-span-2 md:row-span-2 rounded-xl overflow-hidden block" href="#">
+<img alt="Living Room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A meticulously styled, architectural minimalist living room setup featuring a sleek, low-profile sofa in warm brown tones against a light cream textured wall. The lighting is soft and diffuse, creating a serene, gallery-like atmosphere. Generous whitespace surrounds the central furniture pieces, emphasizing their high-end craftsmanship and solid geometry. A single matte black side table provides a sharp, sophisticated contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1oHnwXMwcXwKfRWFf8KGuZW9xRgJwhcRWToa3Ibm9Lbb_AjnjwFkHSGTPOhmzyFwBMiQkCR0agD_og-JVNjTFPAgaFe26VBgwJ08o1q6aXfmx2Cfr4QqwaG79irGTJG0JMX415_3HY3oWC9adUtdr2GM_Wjxgigg7G_z-IuCnCOYqv5gf9L-EA2qJVQK_0l2YLjqbvRUujh-A0lcTaAsef8HIDHG6ufwPB1SU9T6_jZ5X1wcdaMfaPs2kqP4zduguxUqDu9sj3o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mb-1 group-hover:text-tertiary-fixed transition-colors">Living</h3>
+<p class="font-label-sm text-label-sm text-surface-container uppercase tracking-widest">142 Pieces</p>
+</div>
+</a>
+<!-- Bedroom -->
+<a class="group relative md:col-span-1 md:row-span-1 rounded-xl overflow-hidden block h-[300px] md:h-auto" href="#">
+<img alt="Bedroom" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A tranquil, minimalist bedroom interior bathed in soft morning light. The focal point is a low-slung, warm wood bedframe dressed in crisp white and light cream linens. The setting employs a muted, monochromatic palette with subtle warm brown undertones. The composition utilizes expansive negative space to evoke a feeling of restfulness, luxury, and intentional design, akin to a high-end boutique hotel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemuGodnLJ8y1sU7FkM84vX3D97u3r6WErGPpAqyV2keyuzfe_FH8P10-z7pzvTxO7krWijPJACmYbZiZqrInAEtYE6OpKkjo8YjeBrE1R59CT_tEeyXXtqXgHymQlz-KyfyaXxrQnaUSQKJ7QbUBS-xRVUAQyImu9IIWqzJaVIseEQEqQ-ioXezFF99gpKUec0mDq7lvBsDdYJR2O0pqiC8q2RteImgQIPe1-NyR7bmsLRclbCqVLW_jlO5n6PMsmgBo_DZqgedk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-subhead-lg text-subhead-lg text-surface-bright group-hover:text-tertiary-fixed transition-colors">Bedroom</h3>
+</div>
+</a>
+<!-- Dining -->
+<a class="group relative md:col-span-1 md:row-span-1 rounded-xl overflow-hidden block h-[300px] md:h-auto" href="#">
+<img alt="Dining" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated dining area defined by architectural minimalism. A sculptural, matte black dining table stands accompanied by organic, warm brown wooden chairs. The room features vast, unadorned light cream walls that act as a canvas for the furniture's stark silhouettes. The lighting mimics a curated showroom, casting gentle, ambient shadows that highlight the textures and premium materials of the dining set." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSKVJnTrsLcOlIBm1lLzwBF6FYpYYibebA7w50LlI9NNK5IuLW6ZdAiZ2MYU09kaM869bAne3sH_V0Az3GYlw9hBJ2qR9FiFiaPe5ckSdHJmcIaKQncoLV6EpnUh59H3xruGiGSqFIemFpUfwLyCErzUyGvtPblhi5b3S57Dxc7OXBUKiD-mfoeBt3i04UY_jWcNsOHfkC5vhOc2Ll6fBYV_sDI5a7CnPACXvWkMrQ20tHAYq4Aa6_EJtStJoMm4O2kEvuU2eqsb0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-subhead-lg text-subhead-lg text-surface-bright group-hover:text-tertiary-fixed transition-colors">Dining</h3>
+</div>
+</a>
+<!-- Office -->
+<a class="group relative md:col-span-2 md:row-span-1 rounded-xl overflow-hidden block h-[300px] md:h-auto" href="#">
+<img alt="Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An elegant, minimalist home office space. A clean-lined, warm brown wooden desk occupies the center, paired with a sleek matte black ergonomic chair. The environment is bright and airy, utilizing light cream walls to maximize the sense of space and focus. The aesthetic is highly professional yet undeniably luxurious, relying on pristine surfaces and deliberate lack of clutter to convey premium quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK97lvzMH2kDYkLtKYncIVC8Wxxyb99kaib9fEQtOt7ZchnZKvYhBuNsPKziWQVHHmBuEref_oAgHE31w7312Jaw0LZKmBUOxWsuzfHdjFFf68Rko3HkxGtpPtY6OUPMboxftIOhQnXCkMDxNDDSEa5nzhwD63I7CueVPBZYk2nhAPIQPmrfL9MY2RlHvE8g6LiFVA904JpYix_qKouBFDg3-WIS5LfYd0XpuewOJAJPrehnB2DYoEiXI5bv_-jW8SJQfHWa2Rua4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-subhead-lg text-subhead-lg text-surface-bright group-hover:text-tertiary-fixed transition-colors">Office</h3>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-lowest full-width border-t border-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="md:col-span-1 flex flex-col justify-between">
+<div class="font-display-lg text-headline-sm text-on-background mb-4">
+                    Furniture Enterprises
+                </div>
+<p class="font-body-md text-body-md text-secondary mt-auto">
+                    © 2024 Furniture Enterprises.<br/>Architectural Minimalism in Living.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="md:col-span-1 flex flex-col gap-4">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Our Story</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Craftsmanship</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Sustainability</a>
+</div>
+<!-- Links Column 2 -->
+<div class="md:col-span-1 flex flex-col gap-4">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Shipping</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Returns</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Contact</a>
+</div>
+<!-- Newsletter / Social (Implied by standard footer needs, keeping minimal) -->
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="font-label-md text-label-md text-on-background">Follow Us</span>
+<div class="flex gap-4 text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

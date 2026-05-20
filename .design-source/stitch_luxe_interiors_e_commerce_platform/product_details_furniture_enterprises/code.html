@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Details - Furniture Enterprises</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#584324",
+                        "surface-container-highest": "#e4e4cc",
+                        "secondary": "#5f5e5e",
+                        "on-background": "#1b1d0e",
+                        "primary-fixed-dim": "#e4beb2",
+                        "inverse-surface": "#303221",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#e2dfde",
+                        "on-secondary-container": "#636262",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "surface-tint": "#75584d",
+                        "background": "#fbfbe2",
+                        "inverse-primary": "#e4beb2",
+                        "surface-container": "#efefd7",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-container": "#8a714e",
+                        "on-tertiary-fixed": "#281801",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "outline": "#827470",
+                        "on-primary-fixed-variant": "#5b4137",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#705937",
+                        "primary-container": "#8d6e63",
+                        "outline-variant": "#d4c3be",
+                        "surface-container-high": "#eaead1",
+                        "inverse-on-surface": "#f2f2d9",
+                        "tertiary-fixed": "#feddb3",
+                        "on-surface-variant": "#504441",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-container": "#fffdff",
+                        "primary": "#72564c",
+                        "surface-bright": "#fbfbe2",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e4cc",
+                        "on-primary-container": "#fffcff",
+                        "surface": "#fbfbe2",
+                        "on-surface": "#1b1d0e",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f5f5dc",
+                        "primary-fixed": "#ffdbce",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#2b160f",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-dim": "#dbdcc3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1440px",
+                        "base": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Montserrat"],
+                        "display-lg": ["Playfair Display"],
+                        "subhead-lg": ["Montserrat"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "subhead-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/70 dark:bg-surface-dim/70 backdrop-blur-xl docked full-width top-0 sticky border-b border-outline-variant/30 shadow-[0_8px_30px_rgb(141,110,99,0.05)] z-50 transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex-1 flex justify-start items-center">
+<button class="md:hidden text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity duration-300 mr-4">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex gap-8">
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:opacity-80 transition-opacity duration-300" href="#">Shop</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Collection</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Materials</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Showrooms</a>
+</div>
+</div>
+<div class="flex-shrink-0 text-center">
+<a class="font-display-lg text-headline-sm tracking-tight text-on-background dark:text-surface-bright" href="#">Furniture Enterprises</a>
+</div>
+<div class="flex-1 flex justify-end items-center gap-6 text-primary dark:text-primary-fixed-dim">
+<button class="hover:opacity-80 transition-opacity duration-300 hidden md:block">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 hidden md:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary mb-8">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Living Room</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Seating</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-background">The Kensho Lounge Chair</span>
+</div>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-24">
+<!-- Image Gallery (Bento Style) -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container group cursor-crosshair">
+<img alt="Main view of the Kensho Lounge Chair" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed product shot of a minimalist wooden lounge chair with natural linen upholstery. The chair sits in a bright, sunlit room with pale oak floors and white walls, embodying an architectural minimalist aesthetic. Soft, natural lighting creates gentle shadows, highlighting the meticulous craftsmanship and texture of the wood and fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWM1M57ISHZKoarcuTfSZB1xL_EE56PCwHL6gMbZr5fQaqagqERD0m21WDk8o46SN4zbXmq_E8e9F6hYhb86_6zbekM6_mLesCq0ihrSaTbenQPqcwOprDMB6THMrAOR0UAdYynHzF-Zu4rh-lWFZF99fdCyR_kPr4f8Cuiu8AeUtuGIp313bHs3StB_AUiSV6nKQSHvZISpOLoY5uAx3kHozzyIgY_EAs_9wYM8I41jemWEzK2GQCvuVddKXdZtlktnO2O1Nas0Q"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-tertiary text-on-tertiary font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-widest">New In</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container group cursor-pointer">
+<img alt="Detail view of wood joinery" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up, macro detail shot of the smooth, polished wooden armrest and joinery of a minimalist chair. The lighting is soft and directional, emphasizing the grain of the warm brown wood against a softly blurred, light background. The mood is serene, focusing on the high-end craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-9baTlOFWyOgAgtVZm7wbJzlOZdX5QUG9qhZ1CEdOnK0JoJfLknIX9x9OMjytcd571t-SxSYJQ0VpRGB3NBBWFKpxzixTI-Q6lXe7XP1EpF8UHx5Yo8cvqAyijonuK6Bn6w1vfUaN4b1kVZIZ2LI6LhxqTSoDSJCBxX_fVzvv_ag7-MGvFTg3jVXUCop3ZhPQJB6UKutDU0IwF9XL59sCy9MFdvdWyA1LTArkeV9mNSa5OgJs8rOzjW-KhBUobhjzZhKeQBb9Sig"/>
+</div>
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container group cursor-pointer">
+<img alt="Detail view of fabric texture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot focusing on the textured linen fabric of a minimalist chair cushion. The soft, neutral tones of the fabric are illuminated by natural, high-key lighting, showing the subtle weave pattern. The overall aesthetic is clean, luxurious, and breathable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjHv_hi9fS4g2i5EJ1gGcqITyTI7bw8hAwUR0L-bwhkW64F7QQDOFENnsFxBtPTUjn1s1Aztf4JA9aqP9wDZKyl5a4yqDzNqdWyuyaOD8-w7yQB_v5vgbnfgvXwZ53I7G04-BJG5Qu760GuLljcntcAjk4x8NeUmGvo5eSzoRL_p2bit4q97CGPmfmP_m7fBY13gAuZ1RwWj4jKWs1pAEYiOBWuvlqNEokThiZRRCswp80EqRsoIRQiIFGoqs6_H3uy7AmA-sows"/>
+</div>
+</div>
+</div>
+<!-- Product Info & Customization -->
+<div class="lg:col-span-5 flex flex-col pt-4 lg:pl-8">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-2">The Kensho Lounge Chair</h1>
+<p class="font-headline-sm text-headline-sm text-primary mb-6">$1,250</p>
+<p class="font-body-lg text-body-lg text-secondary mb-8 leading-relaxed">
+                    Embodying the principles of architectural minimalism, the Kensho Lounge Chair features clean lines and a low profile. Crafted from solid ash with a subtle natural finish, it offers deep, intentional seating for quiet reflection.
+                </p>
+<!-- Configuration Options -->
+<div class="flex flex-col gap-8 mb-10">
+<!-- Wood Finish -->
+<div>
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-md text-label-md text-on-surface">Wood Finish</span>
+<span class="font-body-md text-body-md text-secondary text-sm">Natural Ash</span>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border-2 border-primary overflow-hidden p-1 transition-transform hover:scale-110">
+<span class="block w-full h-full rounded-full bg-[#E5D3B3] shadow-inner"></span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant overflow-hidden p-1 transition-transform hover:scale-110">
+<span class="block w-full h-full rounded-full bg-[#5C4033] shadow-inner"></span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant overflow-hidden p-1 transition-transform hover:scale-110">
+<span class="block w-full h-full rounded-full bg-[#2C2C2C] shadow-inner"></span>
+</button>
+</div>
+</div>
+<!-- Upholstery Texture/Color -->
+<div>
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-md text-label-md text-on-surface">Upholstery</span>
+<span class="font-body-md text-body-md text-secondary text-sm">Oatmeal Linen</span>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border-2 border-primary overflow-hidden p-1 transition-transform hover:scale-110">
+<span class="block w-full h-full rounded-full bg-[#E8E5DF] shadow-inner"></span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant overflow-hidden p-1 transition-transform hover:scale-110">
+<span class="block w-full h-full rounded-full bg-[#8E9B90] shadow-inner"></span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant overflow-hidden p-1 transition-transform hover:scale-110">
+<span class="block w-full h-full rounded-full bg-[#A08A7C] shadow-inner"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-4 mb-10">
+<button class="flex-1 bg-on-background text-on-primary font-label-md text-label-md py-4 px-8 rounded flex items-center justify-center gap-2 hover:bg-primary-container transition-colors duration-300">
+                        Add to Cart
+                    </button>
+<button class="w-full sm:w-auto border border-on-background text-on-background font-label-md text-label-md py-4 px-6 rounded flex items-center justify-center hover:bg-surface-container-high transition-colors duration-300 group">
+<span class="material-symbols-outlined group-hover:filled">favorite</span>
+</button>
+</div>
+<!-- Delivery Info -->
+<div class="flex items-start gap-3 bg-surface-container-low p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary mt-1">local_shipping</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface mb-1">Made to Order</p>
+<p class="font-body-md text-body-md text-secondary text-sm">Estimated delivery: 6-8 weeks. Free white-glove delivery on orders over $2,000.</p>
+</div>
+</div>
+<!-- Share -->
+<div class="mt-8 flex items-center gap-4 border-t border-outline-variant/30 pt-6">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Share</span>
+<button class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">share</span></button>
+<button class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">mail</span></button>
+</div>
+</div>
+</div>
+<!-- Accordion Details -->
+<div class="max-w-3xl mx-auto mb-24 border-t border-outline-variant/30">
+<!-- Details -->
+<details class="group border-b border-outline-variant/30 py-6" open="">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-background cursor-pointer list-none">
+                    Product Details
+                    <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180">keyboard_arrow_down</span>
+</summary>
+<div class="pt-6 font-body-md text-body-md text-secondary space-y-4">
+<p>Designed by renowned architect Studio K, the Kensho chair challenges the boundary between furniture and sculpture. Every joint is meticulously crafted using traditional techniques, eliminating the need for visible hardware.</p>
+<p>The cushions are filled with a high-density, eco-friendly foam wrapped in down for a balance of structure and softness.</p>
+</div>
+</details>
+<!-- Dimensions -->
+<details class="group border-b border-outline-variant/30 py-6">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-background cursor-pointer list-none">
+                    Dimensions
+                    <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180">keyboard_arrow_down</span>
+</summary>
+<div class="pt-6 font-body-md text-body-md text-secondary">
+<ul class="space-y-2">
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Overall Width</span> <span>32" (81 cm)</span></li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Overall Depth</span> <span>34" (86 cm)</span></li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Overall Height</span> <span>29" (74 cm)</span></li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Seat Height</span> <span>16" (40 cm)</span></li>
+<li class="flex justify-between"><span>Arm Height</span> <span>22" (56 cm)</span></li>
+</ul>
+</div>
+</details>
+<!-- Materials & Care -->
+<details class="group border-b border-outline-variant/30 py-6">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-background cursor-pointer list-none">
+                    Materials &amp; Care
+                    <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180">keyboard_arrow_down</span>
+</summary>
+<div class="pt-6 font-body-md text-body-md text-secondary space-y-4">
+<p><strong>Frame:</strong> Solid FSC-certified Ash wood with a zero-VOC matte finish.</p>
+<p><strong>Upholstery:</strong> 100% Belgian Linen. Removable covers for easy dry cleaning.</p>
+<p><strong>Care:</strong> Dust wood frame with a soft, dry cloth. Avoid direct sunlight to prevent fading. Vacuum upholstery regularly using an upholstery attachment.</p>
+</div>
+</details>
+</div>
+<!-- Related Products -->
+<div class="mb-12">
+<h2 class="font-headline-md text-headline-md text-on-background mb-8 text-center md:text-left">Curated Pairings</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group flex flex-col">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-surface-container">
+<img alt="Minimalist side table" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sleek, minimalist wooden side table in a bright, white gallery-like space. The table has thin, elegant legs and a smooth round top. The lighting is soft and ambient, casting a subtle shadow on the floor, enhancing the architectural minimalism of the piece." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWZ_dVFB9Ij4wfg_T6AOw49jn_sNdtnWlESbSGVCWGT9SKeLoejYIbK7A5IPIu6kg5P5BgZLmNDtfldjYj2EAq2kBf7X3rh1l07SSQhTmNnwaUo9nFvAN3x3I7-SJe0L4xRIfxVQBZz8G6k4JvyjW16C4lhQcCQtC56MhzoaurhmevW2mf6kwxBWWXjt5avZmDS_VxIap1RnFYGprETk1Jz7mcRdB659J65ezKuLh0P7nLUgnyQxSCDqCdE1y-MtrkICVZ4GqlT4k"/>
+<button class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors opacity-0 group-hover:opacity-100 duration-300">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-subhead-lg text-subhead-lg text-on-background mb-1">Aura Side Table</h3>
+<p class="font-body-md text-body-md text-secondary">Solid Walnut</p>
+</div>
+<span class="font-label-md text-label-md text-on-surface">$450</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-surface-container">
+<img alt="Modern floor lamp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A tall, minimalist floor lamp made of thin black metal with a simple white linen shade. It stands next to a plain white wall in a room with light wood flooring. The lighting is soft and natural, emphasizing the clean lines and unadorned aesthetic of the fixture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjn7ReYc_HeuRitRigAjfjVBk_AJHxQ0RXmfVU9XYIS03dG-kxWRaTRY7tlFcrAptIRcYGj8LhqG_DKuPh0bT6YBg4w-RnuFcO95D86Ti_eXzYSsnicMbQDIstCf3WP-Y5fBuHYmviifmsQuJAczxN4ZS9foBocE_d0SQZiQKnWCMiY1ann7XjB23El3N1kPaoH4uhnaZDE6Q6tbgd-6JINJ4Ou35T6gAUqVh_DjOkzZS1xVNMB1moK4DpnEbFp3j0utYaZG7oUak"/>
+<button class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors opacity-0 group-hover:opacity-100 duration-300">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-subhead-lg text-subhead-lg text-on-background mb-1">Linea Floor Lamp</h3>
+<p class="font-body-md text-body-md text-secondary">Matte Black</p>
+</div>
+<span class="font-label-md text-label-md text-on-surface">$680</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-surface-container">
+<img alt="Textured wool rug" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot of a heavily textured, hand-woven wool rug in natural ivory and beige tones. The rug sits on a polished concrete floor. The lighting is bright and directional from the side, highlighting the deep texture and organic feel of the weaving within a minimalist setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3EpRzhv6XrUiGUSPzRFmsOx5i-se9Jgb755hvyZx9jNBLHPOWXmEFiZZofUSpLuMo60iDYbAihd8KXh2i7yAI9H4XlJf7mj5eoaVztfRCPALJW_wNWRTl3djwZBTjjiDQAwfp2Ncx68K8qSVvz1bDvmTpIyUbHT9Z62AGZYClbY93Kn_RX7LX8K-9RVwK9RzrWaE1SrKgGqdlHhNmqG4ip1dZii9x9I0i4dw7jVIhO74-ZkwMzJL_LowSYXqv02OK_fOtz4V2Kdc"/>
+<button class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors opacity-0 group-hover:opacity-100 duration-300">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-subhead-lg text-subhead-lg text-on-background mb-1">Noma Wool Rug</h3>
+<p class="font-body-md text-body-md text-secondary">Natural Ivory, 8x10</p>
+</div>
+<span class="font-label-md text-label-md text-on-surface">$1,100</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim full-width bg-surface-container dark:bg-surface-dim flat no shadows opacity-100 hover:opacity-80 transition-opacity">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="col-span-1 md:col-span-2 flex flex-col gap-4">
+<a class="font-display-lg text-headline-sm text-on-background dark:text-surface-bright" href="#">Furniture Enterprises</a>
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim max-w-sm mt-4">
+                    © 2024 Furniture Enterprises. Architectural Minimalism in Living.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-background uppercase tracking-widest mb-2">Company</h4>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Our Story</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Craftsmanship</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Sustainability</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-background uppercase tracking-widest mb-2">Support</h4>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Shipping</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Returns</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

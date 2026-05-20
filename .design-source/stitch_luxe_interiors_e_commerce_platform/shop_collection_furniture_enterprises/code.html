@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Furniture Enterprises - Shop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#584324",
+                        "surface-container-highest": "#e4e4cc",
+                        "secondary": "#5f5e5e",
+                        "on-background": "#1b1d0e",
+                        "primary-fixed-dim": "#e4beb2",
+                        "inverse-surface": "#303221",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#e2dfde",
+                        "on-secondary-container": "#636262",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "surface-tint": "#75584d",
+                        "background": "#fbfbe2",
+                        "inverse-primary": "#e4beb2",
+                        "surface-container": "#efefd7",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-container": "#8a714e",
+                        "on-tertiary-fixed": "#281801",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "outline": "#827470",
+                        "on-primary-fixed-variant": "#5b4137",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#705937",
+                        "primary-container": "#8d6e63",
+                        "outline-variant": "#d4c3be",
+                        "surface-container-high": "#eaead1",
+                        "inverse-on-surface": "#f2f2d9",
+                        "tertiary-fixed": "#feddb3",
+                        "on-surface-variant": "#504441",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-container": "#fffdff",
+                        "primary": "#72564c",
+                        "surface-bright": "#fbfbe2",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e4cc",
+                        "on-primary-container": "#fffcff",
+                        "surface": "#fbfbe2",
+                        "on-surface": "#1b1d0e",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f5f5dc",
+                        "primary-fixed": "#ffdbce",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#2b160f",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-dim": "#dbdcc3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1440px",
+                        "base": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Montserrat"],
+                        "display-lg": ["Playfair Display"],
+                        "subhead-lg": ["Montserrat"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "subhead-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/70 dark:bg-surface-dim/70 backdrop-blur-xl docked full-width top-0 sticky border-b border-outline-variant/30 shadow-[0_8px_30px_rgb(141,110,99,0.05)] transition-all duration-500 ease-in-out z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="font-display-lg-mobile md:font-display-lg text-headline-sm tracking-tight text-on-background dark:text-surface-bright" href="#">
+                Furniture Enterprises
+            </a>
+<!-- Navigation Links (Web) -->
+<div class="hidden md:flex items-center gap-8 font-label-md text-label-md">
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1" href="#">Shop</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Collection</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Materials</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Showrooms</a>
+</div>
+<!-- Actions & Search -->
+<div class="flex items-center gap-4 text-primary dark:text-primary-fixed-dim font-label-md text-label-md">
+<div class="hidden md:flex items-center border-b border-outline-variant focus-within:border-on-background pb-1 transition-colors group">
+<input class="bg-transparent border-none focus:ring-0 text-body-md font-body-md text-on-background placeholder-secondary w-32 focus:w-48 transition-all duration-300 outline-none" placeholder="Search..." type="text"/>
+<span class="material-symbols-outlined text-secondary group-focus-within:text-primary">search</span>
+</div>
+<button class="hover:opacity-80 transition-opacity duration-300 flex items-center justify-center p-2 rounded-full hover:bg-surface-container">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 flex items-center justify-center p-2 rounded-full hover:bg-surface-container relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 flex items-center justify-center p-2 rounded-full hover:bg-surface-container hidden md:flex">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button class="md:hidden flex items-center justify-center p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-[80px]">
+<!-- Page Header -->
+<header class="flex flex-col md:flex-row justify-between items-start md:items-end mb-[80px] gap-6">
+<div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-4">Curated Seating</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">Discover our collection of architecturally inspired seating, designed with minimal lines and uncompromising craftsmanship.</p>
+</div>
+<!-- Sorting -->
+<div class="flex items-center gap-4">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-widest" for="sort">Sort By</label>
+<div class="relative">
+<select class="appearance-none bg-transparent border-b border-outline-variant text-on-background font-body-md text-body-md py-2 pr-8 pl-0 focus:ring-0 focus:border-on-background transition-colors cursor-pointer outline-none rounded-none" id="sort">
+<option value="latest">Latest Arrivals</option>
+<option value="price-asc">Price: Low to High</option>
+<option value="price-desc">Price: High to Low</option>
+<option value="popular">Most Popular</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-secondary">expand_more</span>
+</div>
+</div>
+</header>
+<!-- Layout Grid: Sidebar + Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="md:col-span-3 hidden md:block">
+<div class="sticky top-32 flex flex-col gap-8 pr-8 border-r border-surface-container-high h-[calc(100vh-160px)] overflow-y-auto custom-scrollbar">
+<!-- Filter Group: Category -->
+<div class="border-b border-surface-container-high pb-6">
+<h3 class="font-label-md text-label-md text-on-background mb-4 uppercase tracking-widest">Category</h3>
+<ul class="space-y-3 font-body-md text-body-md text-secondary">
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Lounge Chairs</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Dining Chairs</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Stools &amp; Benches</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Sofas</span>
+</label>
+</li>
+</ul>
+</div>
+<!-- Filter Group: Material -->
+<div class="border-b border-surface-container-high pb-6">
+<h3 class="font-label-md text-label-md text-on-background mb-4 uppercase tracking-widest">Material</h3>
+<ul class="space-y-3 font-body-md text-body-md text-secondary">
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Solid Oak</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Walnut</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Aniline Leather</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox text-primary border-outline-variant rounded-sm focus:ring-primary focus:ring-opacity-50" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Linen Blend</span>
+</label>
+</li>
+</ul>
+</div>
+<!-- Filter Group: Price -->
+<div class="pb-6">
+<h3 class="font-label-md text-label-md text-on-background mb-4 uppercase tracking-widest">Price Range</h3>
+<div class="flex items-center gap-4">
+<div class="relative w-full">
+<span class="absolute left-0 top-1/2 -translate-y-1/2 text-secondary font-body-md text-body-md">$</span>
+<input class="w-full bg-transparent border-b border-outline-variant pl-4 py-2 text-body-md font-body-md focus:border-on-background outline-none transition-colors" placeholder="Min" type="number"/>
+</div>
+<span class="text-secondary">-</span>
+<div class="relative w-full">
+<span class="absolute left-0 top-1/2 -translate-y-1/2 text-secondary font-body-md text-body-md">$</span>
+<input class="w-full bg-transparent border-b border-outline-variant pl-4 py-2 text-body-md font-body-md focus:border-on-background outline-none transition-colors" placeholder="Max" type="number"/>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="md:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-[80px]">
+<!-- Product Card 1 -->
+<article class="group flex flex-col relative cursor-pointer">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-6">
+<img alt="Kodo Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A masterfully crafted minimalist oak lounge chair sits centrally in a sun-drenched, stark white gallery space. The aesthetic is quintessential architectural minimalism, characterized by clean lines and unadorned surfaces. Soft, diffused daylight filters through a large window out of frame, casting a gentle, elongated shadow on the pristine concrete floor. The overall mood is serene, luxurious, and highly intentional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdy9CH4hqcybXH1tngXjSyZiEpLsFKfUjY7dJeqzc3U3X8fXs87K2FW9F4rZEykEYQFHzti1v3VlgGqcv2huAHtUAsR04Zd4QtQwCla4z-5WESLi_Uy_D9T_5xB8nNUqpp4Gvqom2fp-uF1iTSKL3_Fj6ZM9jbyMNqv2UMBtWpIxJih8LCYnyxxkassIIeaWPx7FsOiD1PSiQI_Lb9HoCQ_iTE7p0xNl2TM7vGCcavmkyFmEmP4RCuzYqJ-6GUdypRc4mg8iKtiw8"/>
+<!-- Wishlist FAB (Overlaid) -->
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-background shadow-sm hover:bg-surface-container-lowest transition-colors z-10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+<!-- Hover Add to Cart -->
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+<button class="w-full bg-on-background hover:bg-primary text-surface-container-lowest font-label-md text-label-md py-4 rounded-lg transition-colors flex justify-center items-center gap-2 shadow-[0_8px_30px_rgb(141,110,99,0.15)]">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Add to Cart
+                            </button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-body-md text-body-md text-on-background mb-1">Kodo Lounge Chair</h2>
+<p class="font-label-sm text-label-sm text-secondary">Solid Oak &amp; Aniline Leather</p>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-background">$1,250</p>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group flex flex-col relative cursor-pointer">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-6">
+<!-- Badge -->
+<div class="absolute top-4 left-4 z-10 bg-tertiary px-3 py-1 rounded-full">
+<span class="font-label-sm text-label-sm text-on-tertiary tracking-widest uppercase">New In</span>
+</div>
+<img alt="Aura Dining Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A sleek, black wood dining chair with a minimalist woven seat, positioned elegantly against an off-white, textured plaster wall. The lighting is low and moody, mimicking an intimate, high-end showroom atmosphere. Subtle, ambient shadows suggest depth without relying on pure black. The design evokes feelings of refined taste, architectural purity, and quiet luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnGI2jQk6chXNFwhHbyMQ8mpuJ6idLG7zTiejhYu3MHKdcYuIacD2O7WkeNzyiSdXbxUgAVS06_m1yplQH79GikA-SvtiGRUf8yJfZtc_sWWhUhg91S4lLNRZQw4I1mYUgjkjPKW4KyeO0Ojl32lE0ANH1b-chI7fRCOFFSI-dsZ5i-sIna5dsATlZZxRDsPZ-D4y7TmMT96q_-VIu5eq9l5dPhET84BkZ6IYxGDglDSkHGtCj7Oqr1YwNp7blxxc28ZFZFfnN-sw"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-background shadow-sm hover:bg-surface-container-lowest transition-colors z-10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+<button class="w-full bg-on-background hover:bg-primary text-surface-container-lowest font-label-md text-label-md py-4 rounded-lg transition-colors flex justify-center items-center gap-2 shadow-[0_8px_30px_rgb(141,110,99,0.15)]">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Add to Cart
+                            </button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-body-md text-body-md text-on-background mb-1">Aura Dining Chair</h2>
+<p class="font-label-sm text-label-sm text-secondary">Ebonized Ash &amp; Cord</p>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-background">$850</p>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group flex flex-col relative cursor-pointer">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-6">
+<img alt="Solstice Stool" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A solid block of travertine marble carved into a simple, geometric stool, resting softly on a blonde wood floor. The background is a stark, minimal expanse of white space, embodying the gallery-like aesthetic of the brand. Natural, soft light grazes the textured surface of the stone, highlighting its craftsmanship. The mood is calm, grounded, and monumental." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJgZ6HQmDpLR3nemlcmgPg9DMhpeemov0DHXEIb0930YDRRTwmb6UfR-DhLnhU3GKA8D6UOSXLXMIj_fxRxb-gSd12eUVsIYde_AZirgz7kluUJZpFQoHjpMk5RjSf59JREhkdDUsMM1eynreq0Tw3SssgD3Xc3-TaZj8qR9N6ClFaJhwyVHrvtrf0pdnXTQMIOTg39VqsCiP4vgsueeX0BmayAtjE2breNbrUSa_EKFcKtLbvRhag6xlJihCmrUI1fY3VyrmKuvQ"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-background shadow-sm hover:bg-surface-container-lowest transition-colors z-10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+<button class="w-full bg-on-background hover:bg-primary text-surface-container-lowest font-label-md text-label-md py-4 rounded-lg transition-colors flex justify-center items-center gap-2 shadow-[0_8px_30px_rgb(141,110,99,0.15)]">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Add to Cart
+                            </button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-body-md text-body-md text-on-background mb-1">Solstice Stool</h2>
+<p class="font-label-sm text-label-sm text-secondary">Honed Travertine</p>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-background">$620</p>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim mt-auto w-full border-t border-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<p class="font-display-lg text-headline-sm text-on-background dark:text-surface-bright mb-4">Furniture Enterprises</p>
+<p class="font-body-md text-body-md text-secondary">Architectural Minimalism in Living.</p>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80" href="#">Our Story</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80" href="#">Craftsmanship</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80" href="#">Shipping</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80" href="#">Returns</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80" href="#">Contact</a>
+</div>
+</div>
+<div class="md:col-span-1 flex items-end justify-start md:justify-end mt-8 md:mt-0">
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim">
+                    © 2024 Furniture Enterprises.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
