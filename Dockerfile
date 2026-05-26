@@ -14,8 +14,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN docker-php-ext-install zip
 
-RUN yes '' | pecl install mongodb \
-    && docker-php-ext-enable mongodb
+
 
 # Enable Apache rewrite module
 RUN a2enmod rewrite
