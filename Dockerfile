@@ -9,18 +9,12 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     libssl-dev \
     libzstd-dev \
-    pkg-config
+    pkg-config \
     ca-certificates
 
-# Install PHP zip extension
 RUN docker-php-ext-install zip
 
-# Install MongoDB extension
-
-
-RUN apt-get update && apt-get install -y libssl-dev pkg-config \
-    && pecl channel-update pecl.php.net \
-    && printf "\n" | pecl install mongodb \
+RUN yes '' | pecl install mongodb \
     && docker-php-ext-enable mongodb
 
 # Enable Apache rewrite module
