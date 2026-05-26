@@ -52,9 +52,10 @@ p { line-height: 1.7; color: var(--muted); }
 .hero-actions, .section-head.split, .admin-topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 0 24px; border: 1px solid var(--primary-strong); background: var(--primary-strong); color: #fff; border-radius: 12px; font: 700 12px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; transition: .25s ease; }
 .button:hover { background: var(--primary); border-color: var(--primary); }
-.button:disabled { cursor: wait; opacity: .62; }
+.button:disabled { cursor: not-allowed; opacity: .62; }
 .button.ghost { background: transparent; color: var(--ink); }
 .button.wide { width: 100%; margin: 24px 0; }
+.button.stock-disabled { background: var(--muted); border-color: var(--muted); color: #fff; }
 .notice { max-width: 1440px; margin: 0 auto 22px; padding: 14px 18px; border: 1px solid var(--surface-line); border-radius: 12px; background: rgba(255,255,255,.72); color: var(--primary); }
 
 .section, .page { max-width: 1440px; margin: 0 auto; padding: clamp(70px, 9vw, 120px) clamp(20px, 5vw, 80px); }
@@ -154,6 +155,11 @@ dd { margin: 0; color: var(--muted); }
 .admin-panel { margin-top: 30px; }
 .admin-main > .section-head:first-child, .admin-main > .shop-heading:first-child { margin-top: 0; }
 .revenue-panel .section-head strong { color: var(--primary-strong); font-size: 18px; }
+.revenue-summary { display: grid; justify-items: end; gap: 12px; }
+.revenue-pager { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.revenue-pager a { min-height: 38px; display: inline-flex; align-items: center; gap: 7px; padding: 0 13px; border: 1px solid var(--surface-line); border-radius: 12px; background: rgba(255,255,255,.58); color: var(--primary); font: 700 11px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; transition: .2s ease; }
+.revenue-pager a:hover { border-color: var(--primary); color: var(--ink); background: rgba(255,255,255,.8); }
+.revenue-pager svg { width: 16px; height: 16px; }
 .revenue-chart { display: grid; grid-template-columns: repeat(7, minmax(70px, 1fr)); gap: 18px; min-height: 260px; align-items: end; padding-top: 16px; }
 .revenue-bar { display: grid; grid-template-rows: 180px auto auto; gap: 10px; text-align: center; color: var(--muted); }
 .revenue-bar span { align-self: end; width: 100%; min-height: 8px; border-radius: 10px 10px 4px 4px; background: linear-gradient(180deg, var(--primary), var(--primary-strong)); box-shadow: 0 14px 28px rgba(48, 50, 33, .16); }

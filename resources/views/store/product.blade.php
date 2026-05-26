@@ -17,6 +17,7 @@
             <h1>{{ $product->name }}</h1>
             <p class="price">{{ \App\Support\Money::inr($product->price) }}</p>
             <p>{{ $product->description }}</p>
+            @php($isOutOfStock = (int) $product->stock <= 0)
             <form method="POST" action="{{ route('cart.add', $product) }}">
                 @csrf
                 <fieldset class="color-options">
@@ -35,14 +36,18 @@
                         </label>
                     @endforelse
                 </fieldset>
-                <label class="quantity-field">Quantity <input name="quantity" type="number" min="1" max="{{ $product->stock }}" value="1"></label>
-                <button class="button wide" type="submit">Add to bag</button>
+                @unless($isOutOfStock)
+                    <label class="quantity-field">Quantity <input name="quantity" type="number" min="1" max="{{ $product->stock }}" value="1"></label>
+                    <button class="button wide" type="submit">Add to bag</button>
+                @else
+                    <button class="button wide stock-disabled" type="button" disabled>Out of stock</button>
+                @endunless
             </form>
             <dl>
                 <div><dt>Room</dt><dd>{{ $product->category }}</dd></div>
                 <div><dt>Type</dt><dd>{{ $product->sub_category ?? 'Furniture' }}</dd></div>
                 <div><dt>Material</dt><dd>{{ $product->material }}</dd></div>
-                <div><dt>Stock</dt><dd>{{ $product->stock }} available</dd></div>
+                <div><dt>Stock</dt><dd>{{ $isOutOfStock ? 'Out of stock' : $product->stock.' available' }}</dd></div>
                 @foreach($product->details ?? [] as $detail)
                     <div><dt>Detail</dt><dd>{{ $detail }}</dd></div>
                 @endforeach

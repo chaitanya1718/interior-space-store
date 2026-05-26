@@ -15,7 +15,7 @@
             <a class="offer-banner large" href="{{ route('shop', ['sub_category' => 'Furniture']) }}">
                 <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1400&q=80" alt="Modern furniture setting">
                 <span>Furniture edit</span>
-                <strong>Complete room pieces from ₹34,000</strong>
+                <strong>Complete room pieces from Rs 340</strong>
             </a>
             <a class="offer-banner" href="{{ route('shop', ['sub_category' => 'Lighting']) }}">
                 <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=1000&q=80" alt="Warm pendant lighting">

@@ -28,6 +28,26 @@ class ExampleTest extends TestCase
         $this->actingAs($admin)->get('/admin')->assertOk()->assertSee('Product Management');
     }
 
+    public function test_out_of_stock_products_cannot_be_added_to_cart(): void
+    {
+        $this->seed(DatabaseSeeder::class);
+
+        $product = Product::where('slug', 'kensho-lounge-chair')->firstOrFail();
+        $product->update(['stock' => 0]);
+
+        $this->get('/products/kensho-lounge-chair')
+            ->assertOk()
+            ->assertSee('Out of stock')
+            ->assertDontSee('Add to bag')
+            ->assertDontSee('name="quantity"', false);
+
+        $this->post(route('cart.add', $product), ['quantity' => 1])
+            ->assertRedirect(route('products.show', $product->slug))
+            ->assertSessionHas('status', 'This item is currently out of stock.');
+
+        $this->assertEmpty(session('cart', []));
+    }
+
     public function test_customer_can_place_order_and_admin_can_create_product(): void
     {
         $this->seed(DatabaseSeeder::class);

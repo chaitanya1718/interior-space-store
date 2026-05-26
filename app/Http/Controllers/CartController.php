@@ -18,6 +18,12 @@ class CartController extends Controller
     {
         abort_unless($product->is_active, 404);
 
+        if ((int) $product->stock <= 0) {
+            return redirect()
+                ->route('products.show', $product->slug)
+                ->with('status', 'This item is currently out of stock.');
+        }
+
         $quantity = max(1, min((int) $request->input('quantity', 1), $product->stock));
         $color = (string) $request->input('color', data_get($product->color_options, '0.name', 'Standard'));
         $key = $product->getKey().'|'.$color;

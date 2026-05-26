@@ -17,10 +17,18 @@
 
     <section class="admin-panel revenue-panel">
         <div class="section-head split">
-            <div><p class="eyebrow">Delivered revenue</p><h2>Last 7 days</h2></div>
-            <strong>{{ \App\Support\Money::inr($stats['revenue']) }} delivered total</strong>
+            <div><p class="eyebrow">Delivered revenue</p><h2>{{ $revenueWindow['title'] }}</h2></div>
+            <div class="revenue-summary">
+                <strong>{{ \App\Support\Money::inr($revenueWindow['total']) }} delivered total</strong>
+                <nav class="revenue-pager" aria-label="Revenue date range">
+                    <a href="{{ $revenueWindow['olderUrl'] }}" aria-label="Show previous 7 days"><i data-lucide="chevron-left"></i><span>Past days</span></a>
+                    @if($revenueWindow['page'] > 0)
+                        <a href="{{ $revenueWindow['newerUrl'] }}" aria-label="Show newer 7 days"><span>Newer days</span><i data-lucide="chevron-right"></i></a>
+                    @endif
+                </nav>
+            </div>
         </div>
-        <div class="revenue-chart" aria-label="Revenue generated over the last 7 days">
+        <div class="revenue-chart" aria-label="Revenue generated from {{ $revenueWindow['start'] }} to {{ $revenueWindow['end'] }}">
             @foreach($revenueChart as $point)
                 <div class="revenue-bar">
                     <span style="height: {{ max(8, ($point['total'] / $maxRevenue) * 100) }}%"></span>
