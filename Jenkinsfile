@@ -9,7 +9,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/chaitanya1718/interior-space-store'
+                git branch: 'main',
+                url: 'https://github.com/chaitanya1718/interior-space-store.git'
             }
         }
 
