@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-install zip
 
 # Install MongoDB extension
-RUN pecl install mongodb \
+RUN pecl channel-update pecl.php.net \
+    && pecl install mongodb \
     && docker-php-ext-enable mongodb
 
 # Enable Apache rewrite module
