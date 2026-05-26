@@ -39,7 +39,7 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 RUN git config --global --add safe.directory /var/www/html/interior-project
 
 # Install Laravel dependencies
-RUN composer install
+RUN composer install --ignore-platform-req=ext-mongodb
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/interior-project
