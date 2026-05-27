@@ -15,17 +15,11 @@ RUN apt-get update && apt-get install -y \
 # RUN docker-php-ext-install zip
 RUN docker-php-ext-install zip
 
-RUN apt-get update && apt-get install -y gnupg curl
+RUN pecl channel-update pecl.php.net
 
-RUN curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
-    gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
-    --dearmor
+RUN pecl install mongodb-1.21.0
 
-RUN echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] \
-https://repo.mongodb.org/apt/debian bookworm/mongodb-org/7.0 main" | \
-tee /etc/apt/sources.list.d/mongodb-org-7.0.list
-
-RUN apt-get update && apt-get install -y php-mongodb
+RUN docker-php-ext-enable mongodb
 
 # 
 
